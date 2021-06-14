@@ -1,0 +1,10 @@
+<div *ngIf="!!items$?.length">
+  <div *ngFor="let item of items$">
+    <app-lz-forum-item
+      [id]="item.id"
+      [text]="item.text"
+      [image]="item.image"
+      [title]="item.title"
+    ></app-lz-forum-item>
+  </div>
+</div>
